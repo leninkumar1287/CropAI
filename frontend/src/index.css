@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* KADA Design System CSS Variables */
+:root {
+  /* KADA Brand Colors */
+  --kada-primary: #B8860B;
+  --kada-secondary: #DAA520;
+  --kada-accent: #F4BB44;
+  --kada-dark: #8B6914;
+  --kada-light: #F9E076;
+  
+  /* Status Colors */
+  --kada-green: #2E8B57;
+  --kada-orange: #E67E22;
+  --kada-blue: #3498DB;
+  --kada-purple: #8E44AD;
+  
+  /* Dashboard Colors */
+  --dashboard-bg-start: #FFFFFF;
+  --dashboard-bg-end: #E5D2A2;
+  --tab-active-bg: #FFFAF0;
+  --kada-profile-bg: #FFFAF3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Unna', serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--dashboard-bg-start) 0%, var(--dashboard-bg-end) 100%);
+  color: #111827;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* KADA Custom Component Styles */
+.kada-gradient {
+  background: linear-gradient(135deg, var(--dashboard-bg-start) 0%, var(--dashboard-bg-end) 100%);
+}
+
+.kada-hero-gradient {
+  background: linear-gradient(135deg, var(--kada-primary) 0%, var(--kada-secondary) 50%, var(--kada-accent) 100%);
+}
+
+.kada-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.kada-button-primary {
+  background: var(--kada-primary);
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.kada-button-primary:hover {
+  background: var(--kada-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(184, 134, 11, 0.3);
+}
+
+.font-unna {
+  font-family: 'Unna', serif;
+}
